@@ -1,0 +1,59 @@
+:root {
+  --paper: #f3efe6;
+  --ink: #1c1915;
+  --muted: #6b645b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: var(--font-sans), "Segoe UI", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12vh 8vw 14vh;
+}
+
+.eyebrow {
+  font-size: 1rem;
+  color: var(--muted);
+  margin-bottom: 0.85rem;
+}
+
+h1 {
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 450;
+  font-size: clamp(2.75rem, 7vw, 5.25rem);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  max-width: 12ch;
+}
+
+.rule {
+  display: block;
+  width: 3.25rem;
+  height: 1px;
+  background: var(--ink);
+  margin: 1.6rem 0 1.15rem;
+}
+
+.role {
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
